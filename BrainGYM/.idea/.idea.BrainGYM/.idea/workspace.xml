@@ -12,18 +12,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TitleManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TitleManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TitleManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="420">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1498565081000" expanded="true" signature="6:53" ph="..." />
-                <marker date="1498565081000" expanded="true" signature="96:348" ph="{...}" />
-                <marker date="1498565081000" expanded="true" signature="145:152" ph="{...}" />
-                <marker date="1498565081000" expanded="true" signature="204:211" ph="{...}" />
-                <marker date="1498565081000" expanded="true" signature="239:279" ph="{...}" />
-                <marker date="1498565081000" expanded="true" signature="306:346" ph="{...}" />
+                <marker date="1498567847000" expanded="false" signature="6:53" ph="..." />
+                <marker date="1498567847000" expanded="true" signature="96:348" ph="{...}" />
+                <marker date="1498567847000" expanded="true" signature="145:152" ph="{...}" />
+                <marker date="1498567847000" expanded="true" signature="204:211" ph="{...}" />
+                <marker date="1498567847000" expanded="true" signature="239:279" ph="{...}" />
+                <marker date="1498567847000" expanded="true" signature="306:346" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleManager.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RuleManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <marker date="1498571278000" expanded="true" signature="6:101" ph="..." />
+                <marker date="1498571278000" expanded="true" signature="143:893" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="375:425" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="480:487" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="541:755" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="572:644" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="783:823" ph="{...}" />
+                <marker date="1498571278000" expanded="true" signature="850:891" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,7 +53,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TitleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RuleManager.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +95,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BrainGYM (1 project)" />
+              <option name="myItemId" value="BrainGYM (2 projects)" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -132,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498564998891</updated>
-      <workItem from="1498565002213" duration="84000" />
+      <workItem from="1498565002213" duration="3800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84000" />
+    <option name="totallyTimeSpent" value="3800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -187,17 +208,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StartButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TitleManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1498565081000" expanded="true" signature="6:53" ph="..." />
-            <marker date="1498565081000" expanded="true" signature="96:348" ph="{...}" />
-            <marker date="1498565081000" expanded="true" signature="145:152" ph="{...}" />
-            <marker date="1498565081000" expanded="true" signature="204:211" ph="{...}" />
-            <marker date="1498565081000" expanded="true" signature="239:279" ph="{...}" />
-            <marker date="1498565081000" expanded="true" signature="306:346" ph="{...}" />
+            <marker date="1498567847000" expanded="false" signature="6:53" ph="..." />
+            <marker date="1498567847000" expanded="true" signature="96:348" ph="{...}" />
+            <marker date="1498567847000" expanded="true" signature="145:152" ph="{...}" />
+            <marker date="1498567847000" expanded="true" signature="204:211" ph="{...}" />
+            <marker date="1498567847000" expanded="true" signature="239:279" ph="{...}" />
+            <marker date="1498567847000" expanded="true" signature="306:346" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RuleManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="47" lean-forward="false" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <marker date="1498571278000" expanded="true" signature="6:101" ph="..." />
+            <marker date="1498571278000" expanded="true" signature="143:893" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="375:425" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="480:487" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="541:755" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="572:644" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="783:823" ph="{...}" />
+            <marker date="1498571278000" expanded="true" signature="850:891" ph="{...}" />
           </folding>
         </state>
       </provider>
