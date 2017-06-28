@@ -48,27 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding>
-                <marker date="1498609538000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1498609538000" expanded="true" signature="121:242" ph="{...}" />
-                <marker date="1498609538000" expanded="true" signature="171:178" ph="{...}" />
-                <marker date="1498609538000" expanded="true" signature="233:240" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="6:80" ph="..." />
+                <marker date="1498610129000" expanded="true" signature="144:1593" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="438:559" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="641:816" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="872:976" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="918:970" ph="{...}" />
+                <marker date="1498610129000" expanded="true" signature="1009:1591" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BallManager.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../Unity/tsumutsumu2D/Assets/Script/BallManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -82,6 +75,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TitleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RuleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallManager.cs" />
       </list>
     </option>
   </component>
@@ -179,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498564998891</updated>
-      <workItem from="1498565002213" duration="5881000" />
+      <workItem from="1498565002213" duration="6141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5881000" />
+    <option name="totallyTimeSpent" value="6141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,24 +276,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1498609538000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1498609538000" expanded="true" signature="121:242" ph="{...}" />
-            <marker date="1498609538000" expanded="true" signature="171:178" ph="{...}" />
-            <marker date="1498609538000" expanded="true" signature="233:240" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Unity/tsumutsumu2D/Assets/Script/BallManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
+          <caret line="55" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BallManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+          <folding>
+            <marker date="1498610129000" expanded="true" signature="6:80" ph="..." />
+            <marker date="1498610129000" expanded="true" signature="144:1593" ph="{...}" />
+            <marker date="1498610129000" expanded="true" signature="438:559" ph="{...}" />
+            <marker date="1498610129000" expanded="true" signature="641:816" ph="{...}" />
+            <marker date="1498610129000" expanded="true" signature="872:976" ph="{...}" />
+            <marker date="1498610129000" expanded="true" signature="918:970" ph="{...}" />
+            <marker date="1498610129000" expanded="true" signature="1009:1591" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
