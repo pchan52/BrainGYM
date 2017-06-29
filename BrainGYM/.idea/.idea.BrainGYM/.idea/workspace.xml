@@ -125,7 +125,7 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="ResultManager.cs" pinned="false" current-in-tab="true">
+            <file leaf-file-name="ResultManager.cs" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Assets/Scripts/ResultManager.cs">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="360">
@@ -137,6 +137,66 @@
                       <marker date="1498712553000" expanded="true" signature="270:277" ph="{...}" />
                       <marker date="1498712553000" expanded="true" signature="306:346" ph="{...}" />
                       <marker date="1498712553000" expanded="true" signature="374:415" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="PlayerPrefsX.cs" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerPrefsX.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="3900">
+                    <caret line="260" column="1" lean-forward="false" selection-start-line="260" selection-start-column="1" selection-end-line="260" selection-end-column="1" />
+                    <folding>
+                      <marker date="1498713590000" expanded="true" signature="0:199" ph="/* Contribution (Created CSharp Version) 10/2010: Daniel P. Rossi (DR9885) ... */" />
+                      <marker date="1498713590000" expanded="true" signature="208:234" ph="..." />
+                      <marker date="1498713590000" expanded="true" signature="269:7042" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="273:802" ph="Vector 3" />
+                      <marker date="1498713590000" expanded="true" signature="293:361" ph="/// Stores a Vector3 value into a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="420:502" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="506:573" ph="/// Finds a Vector3 value from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="619:788" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="806:2209" ph="Bool Array" />
+                      <marker date="1498713590000" expanded="true" signature="828:916" ph="/// Stores a Bool Array or Multiple Parameters into a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="986:1348" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="1352:1418" ph="/// Returns a Bool Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="1465:1775" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="1499:1750" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="1779:1910" ph="/// Returns a Bool Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="1993:2195" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="2213:3585" ph="Int Array" />
+                      <marker date="1498713590000" expanded="true" signature="2234:2321" ph="/// Stores a Int Array or Multiple Parameters into a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="2388:2745" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="2749:2814" ph="/// Returns a Int Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="2859:3161" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="2893:3137" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="3165:3295" ph="/// Returns a Int Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="3375:3571" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="3589:5035" ph="Float Array" />
+                      <marker date="1498713590000" expanded="true" signature="3612:3701" ph="/// Stores a Float Array or Multiple Parameters into a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="3774:4155" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="4036:4090" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="4112:4137" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="4159:4226" ph="/// Returns a Float Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="4275:4590" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="4309:4564" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="4594:4727" ph="/// Returns a String Array from a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="4813:5021" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="5039:7040" ph="String Array" />
+                      <marker date="1498713590000" expanded="true" signature="5063:5180" ph="/// Stores a String Array or Multiple Parameters into a Key w/ specific char seperator ... " />
+                      <marker date="1498713590000" expanded="true" signature="5272:5468" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="5326:5408" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="5430:5450" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="5472:5560" ph="/// Stores a Bool Array or Multiple Parameters into a Key ... " />
+                      <marker date="1498713590000" expanded="true" signature="5636:5724" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="5728:5813" ph="/// Returns a String Array from a key &amp; char seperator ... " />
+                      <marker date="1498713590000" expanded="true" signature="5880:5996" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="6000:6066" ph="/// Returns a Bool Array from a key ... " />
+                      <marker date="1498713590000" expanded="true" signature="6117:6231" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="6235:6385" ph="/// Returns a String Array from a key &amp; char seperator ... " />
+                      <marker date="1498713590000" expanded="true" signature="6490:6728" ph="{...}" />
+                      <marker date="1498713590000" expanded="true" signature="6732:6865" ph="/// Returns a String Array from a key ... " />
+                      <marker date="1498713590000" expanded="true" signature="6954:7026" ph="{...}" />
                     </folding>
                   </state>
                 </provider>
@@ -335,6 +395,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DragManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CountDownTimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ResultManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerPrefsX.cs" />
       </list>
     </option>
   </component>
@@ -432,12 +493,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1498564998891</updated>
-      <workItem from="1498565002213" duration="29661000" />
+      <workItem from="1498565002213" duration="29925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29661000" />
+    <option name="totallyTimeSpent" value="29925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,6 +834,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ResultManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <marker date="1498712553000" expanded="true" signature="6:113" ph="..." />
+            <marker date="1498712553000" expanded="true" signature="158:417" ph="{...}" />
+            <marker date="1498712553000" expanded="true" signature="208:215" ph="{...}" />
+            <marker date="1498712553000" expanded="true" signature="270:277" ph="{...}" />
+            <marker date="1498712553000" expanded="true" signature="306:346" ph="{...}" />
+            <marker date="1498712553000" expanded="true" signature="374:415" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RxCountDownSound.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -786,17 +862,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ResultManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerPrefsX.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="3900">
+          <caret line="260" column="1" lean-forward="false" selection-start-line="260" selection-start-column="1" selection-end-line="260" selection-end-column="1" />
           <folding>
-            <marker date="1498712553000" expanded="true" signature="6:113" ph="..." />
-            <marker date="1498712553000" expanded="true" signature="158:417" ph="{...}" />
-            <marker date="1498712553000" expanded="true" signature="208:215" ph="{...}" />
-            <marker date="1498712553000" expanded="true" signature="270:277" ph="{...}" />
-            <marker date="1498712553000" expanded="true" signature="306:346" ph="{...}" />
-            <marker date="1498712553000" expanded="true" signature="374:415" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="0:199" ph="/* Contribution (Created CSharp Version) 10/2010: Daniel P. Rossi (DR9885) ... */" />
+            <marker date="1498713590000" expanded="true" signature="208:234" ph="..." />
+            <marker date="1498713590000" expanded="true" signature="269:7042" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="273:802" ph="Vector 3" />
+            <marker date="1498713590000" expanded="true" signature="293:361" ph="/// Stores a Vector3 value into a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="420:502" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="506:573" ph="/// Finds a Vector3 value from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="619:788" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="806:2209" ph="Bool Array" />
+            <marker date="1498713590000" expanded="true" signature="828:916" ph="/// Stores a Bool Array or Multiple Parameters into a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="986:1348" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="1352:1418" ph="/// Returns a Bool Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="1465:1775" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="1499:1750" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="1779:1910" ph="/// Returns a Bool Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="1993:2195" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="2213:3585" ph="Int Array" />
+            <marker date="1498713590000" expanded="true" signature="2234:2321" ph="/// Stores a Int Array or Multiple Parameters into a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="2388:2745" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="2749:2814" ph="/// Returns a Int Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="2859:3161" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="2893:3137" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="3165:3295" ph="/// Returns a Int Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="3375:3571" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="3589:5035" ph="Float Array" />
+            <marker date="1498713590000" expanded="true" signature="3612:3701" ph="/// Stores a Float Array or Multiple Parameters into a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="3774:4155" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="4036:4090" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="4112:4137" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="4159:4226" ph="/// Returns a Float Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="4275:4590" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="4309:4564" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="4594:4727" ph="/// Returns a String Array from a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="4813:5021" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="5039:7040" ph="String Array" />
+            <marker date="1498713590000" expanded="true" signature="5063:5180" ph="/// Stores a String Array or Multiple Parameters into a Key w/ specific char seperator ... " />
+            <marker date="1498713590000" expanded="true" signature="5272:5468" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="5326:5408" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="5430:5450" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="5472:5560" ph="/// Stores a Bool Array or Multiple Parameters into a Key ... " />
+            <marker date="1498713590000" expanded="true" signature="5636:5724" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="5728:5813" ph="/// Returns a String Array from a key &amp; char seperator ... " />
+            <marker date="1498713590000" expanded="true" signature="5880:5996" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="6000:6066" ph="/// Returns a Bool Array from a key ... " />
+            <marker date="1498713590000" expanded="true" signature="6117:6231" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="6235:6385" ph="/// Returns a String Array from a key &amp; char seperator ... " />
+            <marker date="1498713590000" expanded="true" signature="6490:6728" ph="{...}" />
+            <marker date="1498713590000" expanded="true" signature="6732:6865" ph="/// Returns a String Array from a key ... " />
+            <marker date="1498713590000" expanded="true" signature="6954:7026" ph="{...}" />
           </folding>
         </state>
       </provider>
