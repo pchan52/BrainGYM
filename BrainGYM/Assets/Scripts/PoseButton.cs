@@ -5,13 +5,15 @@ public class PoseButton : MonoBehaviour
 {
 	[SerializeField] private Image _poseImage;
 	[SerializeField] private Image _playImage;
+	[SerializeField] private AudioClip _poseClip;
+	private AudioSource _audioSource;
 
 	// Use this for initialization
 	void Start ()
 	{
 		_poseImage.enabled = true;
 		_playImage.enabled = false;
-
+		_audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,7 @@ public class PoseButton : MonoBehaviour
 
 	public void GamePoseButton()
 	{
+		_audioSource.PlayOneShot(_poseClip);
 		if (GameManager.instance.Isplaying)
 		{
 			print("aaa");

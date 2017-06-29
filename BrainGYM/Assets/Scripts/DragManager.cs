@@ -8,6 +8,8 @@ public class DragManager : MonoBehaviour
 	[SerializeField] private SelectedBallListManager _selectedBallListManager;
 	[SerializeField] private TargetNumberManager _targetNumberManager;
 	[SerializeField] private ScoreManager _scoreManager;
+	[SerializeField] private AudioClip _selectClip;
+	private AudioSource _audioSource;
 	
 	// ドラッグしているかしていないか
 	private bool _isDragging;
@@ -19,6 +21,7 @@ public class DragManager : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		_isDragging = false;
+		_audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -44,6 +47,7 @@ public class DragManager : MonoBehaviour
 		if (col.GetComponent<Ball>() == null) return; //選択したものがBallじゃなかったらreturn
 		var colObj = col.gameObject;
 		_lastBall = colObj;
+		_audioSource.PlayOneShot(_selectClip);
 		SelectedBallListManager.instance.PushToList(colObj);
 		_isDragging = true;
 	}
@@ -57,6 +61,7 @@ public class DragManager : MonoBehaviour
 		var dist = Vector2.Distance(_lastBall.transform.position, colObj.transform.position);
 		if (dist > _distance) return; // 一定距離以上だったらreturn
 
+		
 		if (colObj.GetComponent<Ball>().Selected) //ballがすでに選択状態
 		{
 			var length = SelectedBallListManager.instance.RemovableBallList.Count;
@@ -77,6 +82,7 @@ public class DragManager : MonoBehaviour
 		else
 		{
 			if (!colObj.GetComponent<Ball>().CheckSelectable()) return; //和が越える
+			_audioSource.PlayOneShot(_selectClip);
 			_lastBall = colObj;
 			_selectedBallListManager.PushToList(colObj);
 		}

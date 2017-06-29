@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,11 +12,16 @@ public class RuleManager : MonoBehaviour
 	[SerializeField] private GameObject _startButton;
 	[SerializeField] private GameObject _backButton;
 	[SerializeField] private float _time;
+	[SerializeField] private AudioClip _startClip;
+	[SerializeField] private AudioClip _titleClip;
+	private AudioSource _audioSource;
+	
 	
 	// Use this for initialization
 	void Start ()
 	{
 		StartCoroutine(ShowRuleCoroutine(_rule));
+		_audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -37,11 +44,15 @@ public class RuleManager : MonoBehaviour
 
 	public void StartButton()
 	{
-		SceneManager.LoadScene("Main");
+		_audioSource.PlayOneShot(_startClip);
+		Observable.Timer(TimeSpan.FromSeconds(1.5))
+			.Subscribe(_ => SceneManager.LoadScene("Main"));
 	}
 
 	public void BackButton()
 	{
-		SceneManager.LoadScene("Title");
+		_audioSource.PlayOneShot(_titleClip);
+		Observable.Timer(TimeSpan.FromSeconds(1.5))
+			.Subscribe(_ => SceneManager.LoadScene("Title"));
 	}
 }

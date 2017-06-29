@@ -9,8 +9,8 @@ public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
 	[SerializeField] private float _time;
 	[SerializeField] private Image _timerImage;
 	[SerializeField] private Text _timerText;
-//	[SerializeField] private Text _countdownText;
 	[SerializeField] private RxCountDownTimer _rxCountDownTimer;
+	[SerializeField] private ScoreManager _scoreManager;
 	private AudioSource _audioSource;
 	private readonly Subject<Unit> _subject = new Subject<Unit>();
 	private bool _startBgm;
@@ -48,7 +48,7 @@ public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
 
 		if (!(_time < 1)) return;
 		_time = 0;
-
+		_scoreManager.SaveScores();
 		GameManager.instance.Isplaying = false;
 		_audioSource.Stop();
 		_subject.OnNext(Unit.Default);

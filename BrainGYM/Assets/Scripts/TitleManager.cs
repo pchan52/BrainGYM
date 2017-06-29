@@ -1,13 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UniRx;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
-
+	[SerializeField] private AudioClip _startClip;
+	[SerializeField] private AudioClip _ruleClip;
+	private AudioSource _audioSource;
 	// Use this for initialization
 	void Start()
 	{
-
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -18,12 +22,17 @@ public class TitleManager : MonoBehaviour
 
 	public void StartButton()
 	{
-		SceneManager.LoadScene("Main");
+		
+		_audioSource.PlayOneShot(_startClip);
+		Observable.Timer(TimeSpan.FromSeconds(1.5))
+			.Subscribe(_ => SceneManager.LoadScene("Main"));
 	}
 
 	public void RuleButton()
 	{
-		SceneManager.LoadScene("Rule");
+		_audioSource.PlayOneShot(_ruleClip);
+		Observable.Timer(TimeSpan.FromSeconds(1.5))
+			.Subscribe(_ => SceneManager.LoadScene("Rule"));
 	}
 }
 

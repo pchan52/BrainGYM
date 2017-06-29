@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PassButton : MonoBehaviour {
+	
+	[SerializeField] private AudioClip _passClip;
+	private AudioSource _audioSource;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		_audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +20,7 @@ public class PassButton : MonoBehaviour {
 
 	public void PassNumberButton()
 	{
+		_audioSource.PlayOneShot(_passClip);
 		TargetNumberManager.instance.ReturnNumber();
 	}
 }
