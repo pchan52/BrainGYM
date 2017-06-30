@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-
 	[SerializeField] private int _number;
 	[SerializeField] private bool _selected;
-	[SerializeField] private TargetNumberManager _targetNumberManager;
 	
 	public int Number
 	{
@@ -27,18 +23,10 @@ public class Ball : MonoBehaviour
 		GetComponent<SpriteRenderer>().enabled = false;
 		_selected = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {	
-	}
 
 	public bool CheckSelectable()
 	{
 		var currentSum = SelectedBallListManager.instance.CalcListSum();
-		print(currentSum);
-		print(_number);
-		print(currentSum+_number);
-		print(TargetNumberManager.instance.TargetNumber);
 		if (currentSum + _number > TargetNumberManager.instance.TargetNumber) return false;
 		
 		return true;

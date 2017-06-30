@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 
 public class BallManager : SingletonMonoBehaviour<BallManager>
 {
+    [SerializeField] private float _generateBallTimeSpan;
     [SerializeField] private float _width;
     [SerializeField] private float _hight;
     [SerializeField] private GameObject _ball;
@@ -16,7 +17,7 @@ public class BallManager : SingletonMonoBehaviour<BallManager>
     public void Setup()
     {
         _subject
-            .Delay(TimeSpan.FromSeconds(0.05))
+            .Delay(TimeSpan.FromSeconds(_generateBallTimeSpan))
             .Subscribe(_ => GenerateBall());
     }
 
@@ -42,10 +43,8 @@ public class BallManager : SingletonMonoBehaviour<BallManager>
         var ball = Instantiate(_ball);
         var x =  Random.Range( -_width, _width);
         ball.transform.position = new Vector2(x,_hight); //instantiate positionの指定
-		
         var length = _ballsprites.Length;
         var i = Random.Range(0, length); //配列長分のボールの種類
-//        ball.name = "Ball" + i; //オブジェクト名を変更  ⇐ これいるかな？
         ball.GetComponent<Ball>().Number = i; //ボールそれぞれにNumberを格納
         var ballSprite = ball.GetComponent<SpriteRenderer>(); 
         if (_ballsprites != null)  ballSprite.sprite = _ballsprites[i]; //spriteの指定

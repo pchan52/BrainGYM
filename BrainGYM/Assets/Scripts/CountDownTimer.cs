@@ -1,34 +1,31 @@
-﻿using System;
-using UniRx;
+﻿using UniRx;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
 {
-	[SerializeField] private float _time;
+	[SerializeField] private float _maxtime;
 	[SerializeField] private Image _timerImage;
 	[SerializeField] private Text _timerText;
 	[SerializeField] private RxCountDownTimer _rxCountDownTimer;
 	[SerializeField] private ScoreManager _scoreManager;
 	private AudioSource _audioSource;
-	private readonly Subject<Unit> _subject = new Subject<Unit>();
+	private readonly Subject<int> _subject = new Subject<int>();
 	private bool _startBgm;
+	private float _time;
 
 	// Use this for initialization
 	void Start()
 	{
 		_audioSource = GetComponent<AudioSource>();
 		_startBgm = false;
-		_subject
-			.Delay(TimeSpan.FromSeconds(1.5))
-			.Subscribe(_ => SceneManager.LoadScene("Result"));
+		_time = _maxtime;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		_timerImage.fillAmount = _time / 60;
+		_timerImage.fillAmount = _time / _maxtime;
 		if (!GameManager.instance.Isplaying) return;
 		if (_time > 0)
 		{
@@ -51,6 +48,5 @@ public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
 		_scoreManager.SaveScores();
 		GameManager.instance.Isplaying = false;
 		_audioSource.Stop();
-		_subject.OnNext(Unit.Default);
 	}
 }

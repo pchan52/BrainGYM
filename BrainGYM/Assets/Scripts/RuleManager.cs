@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class RuleManager : MonoBehaviour
 {
-
+	[SerializeField] private float _loadscenetime;
 	[SerializeField] private Text[] _rule;
 	[SerializeField] private GameObject _startButton;
 	[SerializeField] private GameObject _backButton;
@@ -22,11 +22,6 @@ public class RuleManager : MonoBehaviour
 	{
 		StartCoroutine(ShowRuleCoroutine(_rule));
 		_audioSource = GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	private IEnumerator ShowRuleCoroutine(Text[] texts)
@@ -45,14 +40,14 @@ public class RuleManager : MonoBehaviour
 	public void StartButton()
 	{
 		_audioSource.PlayOneShot(_startClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadscenetime))
 			.Subscribe(_ => SceneManager.LoadScene("Main"));
 	}
 
 	public void BackButton()
 	{
 		_audioSource.PlayOneShot(_titleClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadscenetime))
 			.Subscribe(_ => SceneManager.LoadScene("Title"));
 	}
 }

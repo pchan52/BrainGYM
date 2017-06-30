@@ -3,30 +3,27 @@ using UnityEngine.UI;
 
 public class ResultManager : MonoBehaviour
 {
+	[SerializeField] private AudioClip _scoreSound;
 	[SerializeField] private Text[] _scoreTexts;
 	private int[] _scores;
 	private Animator _animator;
+	private AudioSource _audioSource;
 	
 	// Use this for initialization
 	void Start () {
-//		_scores = new[] {1, 2, 3, 0};
-//		PlayerPrefsX.SetIntArray("Scores", _scores);
 		_animator = GetComponent<Animator>();
-		GetScores();		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		_audioSource = GetComponent<AudioSource>();
+		GetScores();
 	}
 
 	private void GetScores()
 	{
 		_scores = PlayerPrefsX.GetIntArray("Scores");
+
 		for (var i = 0; i < _scoreTexts.Length; i++)
 		{
-			print("a");
 			_scoreTexts[i].text = _scores[i].ToString();
+			_audioSource.PlayOneShot(_scoreSound);
 		}
 		var index = _scores[_scoreTexts.Length];
 		if (index != -1)

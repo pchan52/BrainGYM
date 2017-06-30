@@ -15,18 +15,12 @@ public class PoseButton : MonoBehaviour
 		_playImage.enabled = false;
 		_audioSource = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	public void GamePoseButton()
 	{
 		_audioSource.PlayOneShot(_poseClip);
 		if (GameManager.instance.Isplaying)
 		{
-			print("aaa");
 			_playImage.enabled = true;
 			_poseImage.enabled = false;
 			GameManager.instance.Isplaying = false;

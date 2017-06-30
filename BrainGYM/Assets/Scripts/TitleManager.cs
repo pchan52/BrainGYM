@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
+	[SerializeField] private float _loadSceneTimeSpan;
 	[SerializeField] private AudioClip _startClip;
 	[SerializeField] private AudioClip _ruleClip;
 	private AudioSource _audioSource;
@@ -14,24 +15,18 @@ public class TitleManager : MonoBehaviour
 		_audioSource = GetComponent<AudioSource>();
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
-
 	public void StartButton()
 	{
 		
 		_audioSource.PlayOneShot(_startClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
 			.Subscribe(_ => SceneManager.LoadScene("Main"));
 	}
 
 	public void RuleButton()
 	{
 		_audioSource.PlayOneShot(_ruleClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
 			.Subscribe(_ => SceneManager.LoadScene("Rule"));
 	}
 }

@@ -15,11 +15,6 @@ public class StartSign : MonoBehaviour
 		StartCoroutine(StartSignCoroutine());
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	private IEnumerator StartSignCoroutine()
 	{
 		yield return new WaitForSeconds(1f);

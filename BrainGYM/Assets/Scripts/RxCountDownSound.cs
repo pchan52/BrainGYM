@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class RxCountDownSound : MonoBehaviour {
-
-	//効果音
+public class RxCountDownSound : MonoBehaviour
+{
+	[SerializeField] private float _loadscenetime;
 	[SerializeField] private AudioClip _setCountDownTick;
-//	[SerializeField] private AudioClip _setGameSound;
 	[SerializeField] private RxCountDownTimer _rxCountDownTimer;
 	private AudioSource _audioSource;
 
@@ -22,9 +21,10 @@ public class RxCountDownSound : MonoBehaviour {
 			.Where(time => time <= 3)
 			.Subscribe(_ => _audioSource.PlayOneShot(_setCountDownTick));
 
-		//カウントが完了したタイミングでSEを鳴らす
-//		_rxCountDownTimer
-//			.CountDownObservable
-//			.Subscribe(_ => { ;}, () => _audioSource.PlayOneShot(_seCountDownEnd));
+		//カウントが完了したら指定秒まってシーン遷移
+		_rxCountDownTimer
+			.CountDownObservable
+			.Delay(TimeSpan.FromSeconds(_loadscenetime))
+			.Subscribe(_ => { ;}, () => SceneManager.LoadScene("Result"));
 	}
 }

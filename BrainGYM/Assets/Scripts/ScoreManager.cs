@@ -16,7 +16,7 @@ public class ScoreManager : MonoBehaviour
 	void Start()
 	{
 		_score = 0;
-		_scores = PlayerPrefsX.GetIntArray("Scores");
+		_scores = PlayerPrefsX.GetIntArray("Scores",0,4);
 		_scoreChange = false;
 	}
 

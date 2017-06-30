@@ -3,8 +3,9 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ResultButtonManager : MonoBehaviour {
-	
+public class ResultButtonManager : MonoBehaviour
+{
+	[SerializeField] private float _loadSceneTimeSpan;
 	[SerializeField] private AudioClip _replayClip;
 	[SerializeField] private AudioClip _titleClip;
 	private AudioSource _audioSource;
@@ -18,14 +19,14 @@ public class ResultButtonManager : MonoBehaviour {
 	public void ReplayButton()
 	{
 		_audioSource.PlayOneShot(_replayClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
 			.Subscribe(_ => SceneManager.LoadScene("Main"));
 	}
 
 	public void TitleButton()
 	{
 		_audioSource.PlayOneShot(_titleClip);
-		Observable.Timer(TimeSpan.FromSeconds(1.5))
+		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
 			.Subscribe(_ => SceneManager.LoadScene("Title"));
 	}
 }

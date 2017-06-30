@@ -30,7 +30,7 @@ public class RxCountDownText : MonoBehaviour {
 		//タイマが10秒以下になったタイミングで色を赤くする
 		rxCountDownTimer
 			.CountDownObservable
-			.First(timer => timer <= 10)
+			.First(timer => timer <= 3)
 			.Subscribe(_ => text.color = Color.red);
 	}
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PassButton : MonoBehaviour {
 	
@@ -11,11 +9,6 @@ public class PassButton : MonoBehaviour {
 	void Start ()
 	{
 		_audioSource = GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public void PassNumberButton()
