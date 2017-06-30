@@ -91,13 +91,9 @@ public class DragManager : MonoBehaviour
 		if (!_isDragging) return; 
 		var removableBallList = _selectedBallListManager.RemovableBallList;
 		var length = removableBallList.Count; 
-		if (_selectedBallListManager.CalcListSum() == _targetNumberManager.TargetNumber && length >= 3) 
+		if (_selectedBallListManager.CalcListSum() == _targetNumberManager.TargetNumber && length >= 3)
 		{
 			_scoreManager.CalcScore(removableBallList);
-//			for (var i = 0; i < length; i++)
-//			{
-//				Destroy(removableBallList[i]);
-//			}
 			_selectedBallListManager.DestroySelectedBall(removableBallList);
 			BallManager.instance.BallMaker(length); //削除した個数分 ボール作成
 			_targetNumberManager.ReturnNumber();

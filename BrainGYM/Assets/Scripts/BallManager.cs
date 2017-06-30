@@ -11,7 +11,6 @@ public class BallManager : SingletonMonoBehaviour<BallManager>
     [SerializeField] private GameObject _ball;
     [SerializeField] private Sprite[] _ballsprites;
     private readonly Subject<int> _subject = new Subject<int>();
-
 	
     //ストリームの作成
     public void Setup()

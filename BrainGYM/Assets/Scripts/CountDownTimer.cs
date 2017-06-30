@@ -1,5 +1,4 @@
-﻿using UniRx;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
@@ -10,7 +9,6 @@ public class CountDownTimer : SingletonMonoBehaviour<CountDownTimer>
 	[SerializeField] private RxCountDownTimer _rxCountDownTimer;
 	[SerializeField] private ScoreManager _scoreManager;
 	private AudioSource _audioSource;
-	private readonly Subject<int> _subject = new Subject<int>();
 	private bool _startBgm;
 	private float _time;
 
