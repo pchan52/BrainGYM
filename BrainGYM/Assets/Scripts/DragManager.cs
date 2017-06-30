@@ -62,7 +62,7 @@ public class DragManager : MonoBehaviour
 		
 		if (colObj.GetComponent<Ball>().Selected) //ballがすでに選択状態
 		{
-			var length = SelectedBallListManager.instance.RemovableBallList.Count;
+			var length = _selectedBallListManager.RemovableBallList.Count;
 			if (length > 2)
 			{
 				var removableBallList = _selectedBallListManager.RemovableBallList;
@@ -94,10 +94,11 @@ public class DragManager : MonoBehaviour
 		if (_selectedBallListManager.CalcListSum() == _targetNumberManager.TargetNumber && length >= 3) 
 		{
 			_scoreManager.CalcScore(removableBallList);
-			for (var i = 0; i < length; i++)
-			{
-				Destroy(removableBallList[i]);
-			}
+//			for (var i = 0; i < length; i++)
+//			{
+//				Destroy(removableBallList[i]);
+//			}
+			_selectedBallListManager.DestroySelectedBall(removableBallList);
 			BallManager.instance.BallMaker(length); //削除した個数分 ボール作成
 			_targetNumberManager.ReturnNumber();
 		}else

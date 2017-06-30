@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using UniRx;
 using UnityEngine;
 
 public class SelectedBallListManager : SingletonMonoBehaviour<SelectedBallListManager>
 {
 
 	private List<GameObject> _removableBallList;
+	private Subject<GameObject> _subject = new Subject<GameObject>();
 
 	public List<GameObject> RemovableBallList
 	{
@@ -15,6 +18,10 @@ public class SelectedBallListManager : SingletonMonoBehaviour<SelectedBallListMa
 	void Start()
 	{
 		_removableBallList = new List<GameObject>();
+		
+		_subject
+			.Delay(TimeSpan.FromSeconds(0.1))
+			.Subscribe(obj => Destroy(obj));
 	}
 
 	public void ClearList()
@@ -35,7 +42,6 @@ public class SelectedBallListManager : SingletonMonoBehaviour<SelectedBallListMa
 		BallManager.instance.ChangeColor(lastball,1.0f); //リストの中のボールの透明度を戻す
 		var length = _removableBallList.Count;
 		_removableBallList.RemoveAt(length-1);
-		lastball = obj;
 	}
 
 	public void SelectedBallToUnselected(GameObject obj)
@@ -52,4 +58,14 @@ public class SelectedBallListManager : SingletonMonoBehaviour<SelectedBallListMa
 		}
 		return _removableBallList.Sum(obj => obj.GetComponent<Ball>().Number);
 	}
+
+	public void DestroySelectedBall(List<GameObject> list)
+	{
+		for (var i = 0; i < list.Count; i++)
+		{
+			var obj = list[i];
+			_subject.OnNext(obj);
+		}
+	}
+	
 }
