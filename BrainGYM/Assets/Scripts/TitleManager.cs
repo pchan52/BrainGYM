@@ -29,5 +29,12 @@ public class TitleManager : MonoBehaviour
 		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
 			.Subscribe(_ => SceneManager.LoadScene("Rule"));
 	}
+
+	public void ScoreButton()
+	{
+		_audioSource.PlayOneShot(_ruleClip);
+		Observable.Timer(TimeSpan.FromSeconds(_loadSceneTimeSpan))
+			.Subscribe(_ => SceneManager.LoadScene("Result"));
+	}
 }
 
