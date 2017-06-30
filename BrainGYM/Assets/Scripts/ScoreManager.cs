@@ -35,9 +35,9 @@ public class ScoreManager : MonoBehaviour
 
 	public void CalcScore(List<GameObject> list)
 	{
-		var _rate = _scoreRate.Rate(list);
-		var _sum = list.Sum(obj => obj.GetComponent<Ball>().Number);
-		_score += _rate * _sum * 100;
+		var rate = _scoreRate.Rate(list);
+		var sum = list.Sum(obj => obj.GetComponent<Ball>().Number);
+		_score += rate * sum * 100;
 	}
 
 	public void SaveScores()
